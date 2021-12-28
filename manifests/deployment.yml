@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: pdedemo 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pdedemo
+  template:
+    metadata:
+      labels:
+        app: pdedemo 
+    spec:
+      containers:
+        - name: pdedemo 
+          image: pdecontainerregistry.azurecr.io/pdedemo
+          ports:
+          - containerPort: 8081
