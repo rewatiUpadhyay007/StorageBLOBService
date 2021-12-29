@@ -19,7 +19,7 @@ spec:
         - name: StorageBlobService
           image: pdecontainerregistry.azurecr.io/StorageBlobService:Latest
           ports:
-            - containerPort: 8081
+            - containerPort: 9006
 
  kind: Service 
  apiVersion: v1 
@@ -30,6 +30,6 @@ spec:
      app: web 
    ports: 
    - protocol: TCP 
-     port: 8081 
-     targetPort: 8081 
+     port: 9006 
+     targetPort: 9006 
    type: LoadBalancer
