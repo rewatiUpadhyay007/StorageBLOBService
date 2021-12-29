@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: StorageBlobService
+  name: UserDataReporting
   labels:
     app: web
 spec:
@@ -17,14 +17,14 @@ spec:
     spec:
       containers:
         - name: StorageBlobService
-          image: pdecontainerregistry.azurecr.io/StorageBlobService:Latest
+          image: pdecontainerregistry.azurecr.io/storageblobservice:Latest
           ports:
             - containerPort: 9006
 ---
  kind: Service 
  apiVersion: v1 
  metadata: 
-   name: StorageBlobService
+   name: StorageBlobService_svc
  spec: 
    selector: 
      app: web 
