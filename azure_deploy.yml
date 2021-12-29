@@ -20,7 +20,7 @@ spec:
           image: pdecontainerregistry.azurecr.io/StorageBlobService:Latest
           ports:
             - containerPort: 9006
-
+---
  kind: Service 
  apiVersion: v1 
  metadata: 
