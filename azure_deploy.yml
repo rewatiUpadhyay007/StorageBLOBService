@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: UserDataReporting
+  name: userdatareporting
   labels:
     app: web
 spec:
@@ -24,7 +24,7 @@ spec:
  kind: Service 
  apiVersion: v1 
  metadata: 
-   name: StorageBlobService_svc
+   name: storageblobservice_svc
  spec: 
    selector: 
      app: web 
