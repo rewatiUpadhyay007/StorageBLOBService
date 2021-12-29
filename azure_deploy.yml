@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: storageblobservice
-          image: pdecontainerregistry.azurecr.io/storageblobservice:Latest
+          image: pdecontainerregistry.azurecr.io/storageblobservice:_version_
           ports:
             - containerPort: 9006
 ---
