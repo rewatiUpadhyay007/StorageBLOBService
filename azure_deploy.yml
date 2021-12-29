@@ -16,7 +16,7 @@ spec:
         app: web
     spec:
       containers:
-        - name: StorageBlobService
+        - name: storageblobservice
           image: pdecontainerregistry.azurecr.io/storageblobservice:Latest
           ports:
             - containerPort: 9006
@@ -24,7 +24,7 @@ spec:
  kind: Service 
  apiVersion: v1 
  metadata: 
-   name: storageblobservice_svc
+   name: storageblobservice-svc
  spec: 
    selector: 
      app: web 
