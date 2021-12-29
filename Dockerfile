@@ -1,4 +1,4 @@
 FROM openjdk:8
 ADD target/StorageBlobService.jar StorageBlobService.jar
-EXPOSE 8081
+EXPOSE 9006
 ENTRYPOINT ["java","-jar","StorageBlobService.jar"]
